@@ -1,0 +1,24 @@
+services:
+  db:
+    build: ./Db
+    ports:
+        - 1433:1433
+    networks: 
+      voguary-net: 
+        ipv4_address: 172.18.0.2
+  app:
+    image: minhnd18/api_voguary:latest
+    container_name: voguary_api
+    ports: 
+        - 80:8080
+    networks: 
+      voguary-net:
+        ipv4_address: 172.18.0.3
+networks: 
+  voguary-net: 
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16
+          gateway: 172.18.0.1
+  
