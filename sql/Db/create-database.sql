@@ -2,7 +2,7 @@ CREATE DATABASE [EXE201]
 GO
 USE [EXE201]
 GO
-/****** Object:  Table [dbo].[Cart]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Cart]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -18,7 +18,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Category]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Category]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -34,7 +34,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Color]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Color]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -48,7 +48,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Conversations]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Conversations]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -66,7 +66,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Deposit]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Deposit]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -84,7 +84,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Feedback]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Feedback]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -103,7 +103,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Image]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Image]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -117,7 +117,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Inventory]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Inventory]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -132,7 +132,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[MembershipHistory]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[MembershipHistory]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -143,13 +143,14 @@ CREATE TABLE [dbo].[MembershipHistory](
 	[OldMembershipLevel] [nvarchar](50) NULL,
 	[NewMembershipLevel] [nvarchar](50) NULL,
 	[ChangeDate] [datetime] NULL,
+	[Reason] [nvarchar](255) NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[MembershipHistoryID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[MembershipPolicy]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[MembershipPolicy]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -170,7 +171,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Messages]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Messages]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -190,7 +191,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Notification]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Notification]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -208,7 +209,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Payment]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Payment]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -230,7 +231,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PaymentMethod]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[PaymentMethod]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -244,7 +245,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Product]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Product]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -264,7 +265,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductColor]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[ProductColor]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -280,7 +281,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductDetail]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[ProductDetail]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -303,7 +304,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductImage]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[ProductImage]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -318,7 +319,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductSize]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[ProductSize]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -333,7 +334,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Rating]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Rating]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -351,7 +352,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RentalOrder]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[RentalOrder]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -372,7 +373,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RentalOrderDetails]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[RentalOrderDetails]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -390,7 +391,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RewardPoints]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[RewardPoints]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -406,7 +407,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RewardRedemption]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[RewardRedemption]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -423,7 +424,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Role]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Role]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -438,7 +439,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Size]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Size]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -452,7 +453,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Token]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[Token]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -471,7 +472,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[User]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[User]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -499,7 +500,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[UserRole]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[UserRole]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -514,7 +515,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[VerifyCode]    Script Date: 6/20/2024 11:20:29 AM ******/
+/****** Object:  Table [dbo].[VerifyCode]    Script Date: 6/20/2024 2:03:29 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -587,11 +588,11 @@ SET IDENTITY_INSERT [dbo].[Feedback] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Image] ON 
 
-INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (1, N'image1.jpg')
-INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (2, N'image2.jpg')
-INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (3, N'image3.jpg')
-INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (4, N'image4.jpg')
-INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (5, N'image5.jpg')
+INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (1, N'https://th.bing.com/th/id/OIP.XZoTx1NxeqF1KqfMG5cfKwHaLH?rs=1&pid=ImgDetMain')
+INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (2, N'https://mimosawedding.net/wp-content/uploads/2022/08/ao-dai-cuoi-trang-1.jpg')
+INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (3, N'https://tuarts.net/wp-content/uploads/2015/04/anh-cuoi-dep-tai-phim-truong.jpg')
+INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (4, N'https://th.bing.com/th/id/R.28268343114e0f5104c1284d954ece34?rik=gUi35o8vBdU%2fAg&riu=http%3a%2f%2fdanier.com%2fcdn%2fshop%2fproducts%2fDX_1086--final.jpg%3fv%3d1580769963&ehk=qPje%2beIdPkrjX2s8UGISsuV5mHz634%2bSevODRtZZ0Gc%3d&risl=&pid=ImgRaw&r=0')
+INSERT [dbo].[Image] ([ImageID], [ImageURL]) VALUES (5, N'https://streetstyleshop.vn/wp-content/uploads/2020/08/gi%C3%A0y-th%E1%BB%83-thao-nam-m%E1%BB%9Bi-nh%E1%BA%A5t-2-1.jpg')
 SET IDENTITY_INSERT [dbo].[Image] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Inventory] ON 
@@ -605,19 +606,20 @@ SET IDENTITY_INSERT [dbo].[Inventory] OFF
 GO
 SET IDENTITY_INSERT [dbo].[MembershipHistory] ON 
 
-INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate]) VALUES (1, 1, N'Silver', N'Gold', CAST(N'2024-06-01T00:00:00.000' AS DateTime))
-INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate]) VALUES (2, 2, N'Bronze', N'Silver', CAST(N'2024-05-15T00:00:00.000' AS DateTime))
-INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate]) VALUES (3, 3, N'Bronze', N'Silver', CAST(N'2024-06-10T00:00:00.000' AS DateTime))
-INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate]) VALUES (4, 4, N'Bronze', N'Silver', CAST(N'2024-05-20T00:00:00.000' AS DateTime))
-INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate]) VALUES (5, 5, N'Gold', N'Ruby', CAST(N'2024-05-25T00:00:00.000' AS DateTime))
-INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate]) VALUES (6, 6, N'Bronze', N'Silver', CAST(N'2024-06-05T00:00:00.000' AS DateTime))
+INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate], [Reason]) VALUES (1, 1, N'Silver', N'Gold', CAST(N'2024-06-01T00:00:00.000' AS DateTime), N'Cập nhật tổng số tiền thuê')
+INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate], [Reason]) VALUES (2, 2, N'Silver', N'Gold', CAST(N'2024-05-15T00:00:00.000' AS DateTime), N'Cập nhật tổng số tiền thuê')
+INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate], [Reason]) VALUES (3, 3, N'Silver', N'Gold', CAST(N'2024-06-10T00:00:00.000' AS DateTime), N'Cập nhật tổng số tiền thuê')
+INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate], [Reason]) VALUES (4, 4, N'Silver', N'Gold', CAST(N'2024-05-20T00:00:00.000' AS DateTime), N'Cập nhật tổng số tiền thuê')
+INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate], [Reason]) VALUES (5, 5, N'Gold', N'Ruby', CAST(N'2024-05-25T00:00:00.000' AS DateTime), N'Cập nhật tổng số tiền thuê')
+INSERT [dbo].[MembershipHistory] ([MembershipHistoryID], [UserID], [OldMembershipLevel], [NewMembershipLevel], [ChangeDate], [Reason]) VALUES (6, 6, N'Silver', N'Gold', CAST(N'2024-06-05T00:00:00.000' AS DateTime), N'Cập nhật tổng số tiền thuê')
 SET IDENTITY_INSERT [dbo].[MembershipHistory] OFF
 GO
 SET IDENTITY_INSERT [dbo].[MembershipPolicy] ON 
 
-INSERT [dbo].[MembershipPolicy] ([MembershipPolicyID], [LevelName], [MinRentalAmount], [MaxRentalAmount], [DiscountPercentage], [FreeShippingThreshold], [VoucherAmount], [FreeRentalDescription], [BirthdayGiftDescription]) VALUES (1, N'Gold', CAST(3000000.00 AS Decimal(18, 2)), CAST(10000000.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(5, 2)), CAST(500000.00 AS Decimal(18, 2)), CAST(200000.00 AS Decimal(18, 2)), N'Miễn phí thuê 2 lần mỗi năm', N'Quà tặng sinh nhật trị giá 500,000 VND')
-INSERT [dbo].[MembershipPolicy] ([MembershipPolicyID], [LevelName], [MinRentalAmount], [MaxRentalAmount], [DiscountPercentage], [FreeShippingThreshold], [VoucherAmount], [FreeRentalDescription], [BirthdayGiftDescription]) VALUES (2, N'Silver', CAST(2000000.00 AS Decimal(18, 2)), CAST(3000000.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(5, 2)), CAST(300000.00 AS Decimal(18, 2)), CAST(100000.00 AS Decimal(18, 2)), N'Miễn phí thuê 1 lần mỗi năm', N'Quà tặng sinh nhật trị giá 300,000 VND')
-INSERT [dbo].[MembershipPolicy] ([MembershipPolicyID], [LevelName], [MinRentalAmount], [MaxRentalAmount], [DiscountPercentage], [FreeShippingThreshold], [VoucherAmount], [FreeRentalDescription], [BirthdayGiftDescription]) VALUES (3, N'Bronze', CAST(0.00 AS Decimal(18, 2)), CAST(2000000.00 AS Decimal(18, 2)), CAST(5.00 AS Decimal(5, 2)), CAST(200000.00 AS Decimal(18, 2)), CAST(50000.00 AS Decimal(18, 2)), N'Miễn phí thuê 1 lần khi đạt doanh số', N'Quà tặng sinh nhật trị giá 100,000 VND')
+INSERT [dbo].[MembershipPolicy] ([MembershipPolicyID], [LevelName], [MinRentalAmount], [MaxRentalAmount], [DiscountPercentage], [FreeShippingThreshold], [VoucherAmount], [FreeRentalDescription], [BirthdayGiftDescription]) VALUES (1, N'Silver', CAST(1000000.00 AS Decimal(18, 2)), CAST(3000000.00 AS Decimal(18, 2)), CAST(5.00 AS Decimal(5, 2)), CAST(300000.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), N'Không có ưu đãi thuê miễn phí', N'Không có quà sinh nhật')
+INSERT [dbo].[MembershipPolicy] ([MembershipPolicyID], [LevelName], [MinRentalAmount], [MaxRentalAmount], [DiscountPercentage], [FreeShippingThreshold], [VoucherAmount], [FreeRentalDescription], [BirthdayGiftDescription]) VALUES (2, N'Gold', CAST(3000000.00 AS Decimal(18, 2)), CAST(5000000.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(5, 2)), CAST(200000.00 AS Decimal(18, 2)), CAST(100000.00 AS Decimal(18, 2)), N'Không có ưu đãi thuê miễn phí', N'Không có quà sinh nhật')
+INSERT [dbo].[MembershipPolicy] ([MembershipPolicyID], [LevelName], [MinRentalAmount], [MaxRentalAmount], [DiscountPercentage], [FreeShippingThreshold], [VoucherAmount], [FreeRentalDescription], [BirthdayGiftDescription]) VALUES (3, N'Diamond', CAST(5000000.00 AS Decimal(18, 2)), CAST(10000000.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(5, 2)), CAST(100000.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), N'Thuê miễn phí 1 bộ đồ dưới 500,000 VND', N'Tặng quà sinh nhật có giá trị')
+INSERT [dbo].[MembershipPolicy] ([MembershipPolicyID], [LevelName], [MinRentalAmount], [MaxRentalAmount], [DiscountPercentage], [FreeShippingThreshold], [VoucherAmount], [FreeRentalDescription], [BirthdayGiftDescription]) VALUES (4, N'Ruby', CAST(10000000.00 AS Decimal(18, 2)), CAST(20000000.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(5, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(300000.00 AS Decimal(18, 2)), N'Thuê miễn phí 1 bộ đồ không giới hạn giá trị', N'Tặng quà sinh nhật có giá trị')
 SET IDENTITY_INSERT [dbo].[MembershipPolicy] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Messages] ON 
@@ -715,6 +717,7 @@ INSERT [dbo].[RentalOrder] ([OrderID], [UserID], [OrderStatus], [DatePlaced], [D
 INSERT [dbo].[RentalOrder] ([OrderID], [UserID], [OrderStatus], [DatePlaced], [DueDate], [ReturnDate], [ReturnReason], [OrderTotal], [PointsEarned]) VALUES (3, 4, N'Shipped', CAST(N'2024-06-17T12:17:58.267' AS DateTime), CAST(N'2024-06-24T12:17:58.267' AS DateTime), NULL, N'Đã giao hàng', CAST(2500000.00 AS Decimal(10, 2)), 250)
 INSERT [dbo].[RentalOrder] ([OrderID], [UserID], [OrderStatus], [DatePlaced], [DueDate], [ReturnDate], [ReturnReason], [OrderTotal], [PointsEarned]) VALUES (4, 5, N'Cancelled', CAST(N'2024-06-17T12:17:58.267' AS DateTime), NULL, NULL, N'Khách hàng hủy', CAST(3000000.00 AS Decimal(10, 2)), 0)
 INSERT [dbo].[RentalOrder] ([OrderID], [UserID], [OrderStatus], [DatePlaced], [DueDate], [ReturnDate], [ReturnReason], [OrderTotal], [PointsEarned]) VALUES (5, 6, N'Pending', CAST(N'2024-06-17T12:17:58.267' AS DateTime), CAST(N'2024-06-27T12:17:58.267' AS DateTime), NULL, N'Đang chờ xử lý', CAST(1000000.00 AS Decimal(10, 2)), 100)
+INSERT [dbo].[RentalOrder] ([OrderID], [UserID], [OrderStatus], [DatePlaced], [DueDate], [ReturnDate], [ReturnReason], [OrderTotal], [PointsEarned]) VALUES (6, 1, N'string', CAST(N'2024-06-20T06:16:29.000' AS DateTime), CAST(N'2024-06-20T06:16:17.107' AS DateTime), NULL, NULL, CAST(1.00 AS Decimal(10, 2)), 0)
 SET IDENTITY_INSERT [dbo].[RentalOrder] OFF
 GO
 SET IDENTITY_INSERT [dbo].[RentalOrderDetails] ON 
@@ -771,12 +774,12 @@ SET IDENTITY_INSERT [dbo].[Token] OFF
 GO
 SET IDENTITY_INSERT [dbo].[User] ON 
 
-INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (1, N'admin1', N'Nguyễn Văn A', N'password123', N'0901234567', 1, CAST(N'1990-01-01' AS Date), N'admin1@example.com', N'admin1.jpg', N'Active', N'123 Đường ABC, Hà Nội', N'Gold', CAST(5000000.00 AS Decimal(18, 2)), 100, 1, CAST(N'2024-06-01T00:00:00.000' AS DateTime))
-INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (2, N'staff1', N'Lê Thị B', N'password123', N'0901234568', 0, CAST(N'1992-02-02' AS Date), N'staff1@example.com', N'staff1.jpg', N'Active', N'456 Đường DEF, TP.HCM', N'Silver', CAST(3000000.00 AS Decimal(18, 2)), 50, 2, CAST(N'2024-05-15T00:00:00.000' AS DateTime))
-INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (3, N'customer1', N'Trần Văn C', N'password123', N'0901234569', 1, CAST(N'1995-03-03' AS Date), N'customer1@example.com', N'customer1.jpg', N'Active', N'789 Đường GHI, Đà Nẵng', N'Bronze', CAST(1000000.00 AS Decimal(18, 2)), 30, 3, CAST(N'2024-06-10T00:00:00.000' AS DateTime))
-INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (4, N'customer2', N'Phạm Thị D', N'password123', N'0901234570', 0, CAST(N'1993-04-04' AS Date), N'customer2@example.com', N'customer2.jpg', N'Active', N'321 Đường JKL, Cần Thơ', N'Bronze', CAST(2000000.00 AS Decimal(18, 2)), 20, 3, CAST(N'2024-05-20T00:00:00.000' AS DateTime))
-INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (5, N'customer3', N'Hoàng Văn E', N'password123', N'0901234571', 1, CAST(N'1994-05-05' AS Date), N'customer3@example.com', N'customer3.jpg', N'Active', N'654 Đường MNO, Hải Phòng', N'Ruby', CAST(7000000.00 AS Decimal(18, 2)), 150, 1, CAST(N'2024-05-25T00:00:00.000' AS DateTime))
-INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (6, N'customer4', N'Vũ Thị F', N'password123', N'0901234572', 0, CAST(N'1996-06-06' AS Date), N'customer4@example.com', N'customer4.jpg', N'Active', N'987 Đường PQR, Nha Trang', N'Bronze', CAST(500000.00 AS Decimal(18, 2)), 10, 2, CAST(N'2024-06-05T00:00:00.000' AS DateTime))
+INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (1, N'admin1', N'Nguyễn Văn A', N'password123', N'0901234567', 1, CAST(N'1990-01-01' AS Date), N'admin1@example.com', N'https://th.bing.com/th/id/OIP.xGjTHDFPR7ImNNVxwJCcdAHaLH?w=131&h=197&c=7&r=0&o=5&pid=1.7', N'Active', N'123 Đường ABC, Hà Nội', N'Gold', CAST(5000000.00 AS Decimal(18, 2)), 100, 1, CAST(N'2024-06-01T00:00:00.000' AS DateTime))
+INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (2, N'staff1', N'Lê Thị B', N'password123', N'0901234568', 0, CAST(N'1992-02-02' AS Date), N'staff1@example.com', N'https://anhdephd.vn/wp-content/uploads/2022/07/hinh-anh-chan-dung.jpg', N'Active', N'456 Đường DEF, TP.HCM', N'Silver', CAST(3000000.00 AS Decimal(18, 2)), 50, 2, CAST(N'2024-05-15T00:00:00.000' AS DateTime))
+INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (3, N'customer1', N'Trần Văn C', N'password123', N'0901234569', 1, CAST(N'1995-03-03' AS Date), N'customer1@example.com', N'https://png.pngtree.com/background/20211216/original/pngtree-business-morning-mens-office-portrait-photography-map-with-map-picture-image_1511861.jpg', N'Active', N'789 Đường GHI, Đà Nẵng', N'Bronze', CAST(1000000.00 AS Decimal(18, 2)), 30, 3, CAST(N'2024-06-10T00:00:00.000' AS DateTime))
+INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (4, N'customer2', N'Phạm Thị D', N'password123', N'0901234570', 0, CAST(N'1993-04-04' AS Date), N'customer2@example.com', N'https://th.bing.com/th/id/OIP._3urMU9AZH5j-2cDxWYfVwAAAA?rs=1&pid=ImgDetMain', N'Active', N'321 Đường JKL, Cần Thơ', N'Bronze', CAST(2000000.00 AS Decimal(18, 2)), 20, 3, CAST(N'2024-05-20T00:00:00.000' AS DateTime))
+INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (5, N'customer3', N'Hoàng Văn E', N'password123', N'0901234571', 1, CAST(N'1994-05-05' AS Date), N'customer3@example.com', N'https://haycafe.vn/wp-content/uploads/2022/03/Hinh-anh-chan-dung-nam-dep.jpg', N'Active', N'654 Đường MNO, Hải Phòng', N'Ruby', CAST(7000000.00 AS Decimal(18, 2)), 150, 1, CAST(N'2024-05-25T00:00:00.000' AS DateTime))
+INSERT [dbo].[User] ([UserID], [UserName], [FullName], [Password], [Phone], [Gender], [DateOfBirth], [Email], [ProfileImage], [UserStatus], [Address], [MembershipLevel], [TotalRentalValue], [RewardPoints], [MembershipPolicyID], [LastMembershipUpdate]) VALUES (6, N'customer4', N'Vũ Thị F', N'password123', N'0901234572', 0, CAST(N'1996-06-06' AS Date), N'customer4@example.com', N'https://th.bing.com/th/id/OIP.c0dncoP4SelFGLA-vnIusAHaJN?pid=ImgDet&w=474&h=589&rs=1', N'Active', N'987 Đường PQR, Nha Trang', N'Bronze', CAST(500000.00 AS Decimal(18, 2)), 10, 2, CAST(N'2024-06-05T00:00:00.000' AS DateTime))
 SET IDENTITY_INSERT [dbo].[User] OFF
 GO
 INSERT [dbo].[UserRole] ([UserID], [RoleID]) VALUES (1, 1)
