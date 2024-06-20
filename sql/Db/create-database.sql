@@ -1,8 +1,8 @@
 CREATE DATABASE [EXE201]
 GO
-USE [EXE201]
+﻿USE [EXE201]
 GO
-/****** Object:  Table [dbo].[Cart]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Cart]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -18,7 +18,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Category]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Category]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -34,7 +34,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Color]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Color]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -48,7 +48,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Conversations]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Conversations]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -66,7 +66,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Deposit]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Deposit]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -84,7 +84,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Feedback]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Feedback]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -103,7 +103,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Image]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Image]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -117,7 +117,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Inventory]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Inventory]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -132,7 +132,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[MembershipHistory]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[MembershipHistory]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -150,7 +150,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[MembershipPolicy]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[MembershipPolicy]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -171,7 +171,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Messages]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Messages]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -191,7 +191,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Notification]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Notification]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -209,7 +209,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Payment]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Payment]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -231,7 +231,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PaymentMethod]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[PaymentMethod]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -245,7 +245,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Product]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Product]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -265,7 +265,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductColor]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[ProductColor]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -281,7 +281,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductDetail]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[ProductDetail]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -304,7 +304,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductImage]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[ProductImage]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -319,7 +319,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductSize]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[ProductSize]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -334,7 +334,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Rating]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Rating]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -352,7 +352,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RentalOrder]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[RentalOrder]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -373,7 +373,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RentalOrderDetails]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[RentalOrderDetails]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -391,7 +391,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RewardPoints]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[RewardPoints]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -407,7 +407,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RewardRedemption]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[RewardRedemption]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -424,7 +424,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Role]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Role]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -439,7 +439,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Size]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Size]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -453,7 +453,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Token]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[Token]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -472,7 +472,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[User]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[User]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -500,7 +500,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[UserRole]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[UserRole]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -515,7 +515,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[VerifyCode]    Script Date: 6/20/2024 2:03:29 PM ******/
+/****** Object:  Table [dbo].[VerifyCode]    Script Date: 6/20/2024 2:39:43 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -579,11 +579,11 @@ SET IDENTITY_INSERT [dbo].[Deposit] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Feedback] ON 
 
-INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (1, 3, 1, N'Sản phẩm rất tốt, tôi rất hài lòng!', N'feedback1.jpg', N'Approved', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
-INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (2, 4, 2, N'Áo dài rất đẹp và vừa vặn.', N'feedback2.jpg', N'Approved', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
-INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (3, 5, 3, N'Váy cưới đẹp nhưng hơi dài.', N'feedback3.jpg', N'Pending', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
-INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (4, 6, 4, N'Áo khoác rất thoải mái và ấm áp.', N'feedback4.jpg', N'Rejected', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
-INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (5, 3, 5, N'Giày thể thao rất bền và thoải mái.', N'feedback5.jpg', N'Approved', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
+INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (1, 3, 1, N'Sản phẩm rất tốt, tôi rất hài lòng!', N'https://damvaydep.net/image/dam-da-hoi-dai-xe-ta-tay-canh-doi-cuc-xinh-mau-den-vang-70103j.jpg', N'Approved', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
+INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (2, 4, 2, N'Áo dài rất đẹp và vừa vặn.', N'https://mimosawedding.net/wp-content/uploads/2022/08/ao-dai-cuoi-trang-1.jpg', N'Approved', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
+INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (3, 5, 3, N'Váy cưới đẹp nhưng hơi dài.', N'https://tuarts.net/wp-content/uploads/2015/04/anh-cuoi-dep-tai-phim-truong.jpg', N'Pending', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
+INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (4, 6, 4, N'Áo khoác rất thoải mái và ấm áp.', N'https://th.bing.com/th/id/R.28268343114e0f5104c1284d954ece34?rik=gUi35o8vBdU%2fAg&riu=http%3a%2f%2fdanier.com%2fcdn%2fshop%2fproducts%2fDX_1086--final.jpg%3fv%3d1580769963&ehk=qPje%2beIdPkrjX2s8UGISsuV5mHz634%2bSevODRtZZ0Gc%3d&risl=&pid=ImgRaw&r=0', N'Rejected', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
+INSERT [dbo].[Feedback] ([FeedbackID], [UserID], [ProductID], [FeedbackComment], [FeedbackImage], [FeedbackStatus], [DateGiven]) VALUES (5, 3, 5, N'Giày thể thao rất bền và thoải mái.', N'https://streetstyleshop.vn/wp-content/uploads/2020/08/gi%C3%A0y-th%E1%BB%83-thao-nam-m%E1%BB%9Bi-nh%E1%BA%A5t-2-1.jpg', N'Approved', CAST(N'2024-06-17T12:18:26.923' AS DateTime))
 SET IDENTITY_INSERT [dbo].[Feedback] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Image] ON 
@@ -658,8 +658,8 @@ SET IDENTITY_INSERT [dbo].[PaymentMethod] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Product] ON 
 
-INSERT [dbo].[Product] ([ProductID], [ProductTitle], [ProductName], [ProductDescription], [ProductStatus], [ProductPrice], [CategoryID], [CreatedAt]) VALUES (1, N'Đầm dạ hội vàng', N'Đầm dạ hội phong cách sang trọng', N'Chiếc đầm dạ hội màu vàng, thiết kế hiện đại', N'Available', 1500000, 1, CAST(N'2024-06-17T12:16:19.287' AS DateTime))
-INSERT [dbo].[Product] ([ProductID], [ProductTitle], [ProductName], [ProductDescription], [ProductStatus], [ProductPrice], [CategoryID], [CreatedAt]) VALUES (2, N'Áo dài cưới trắng', N'Áo dài cưới với họa tiết truyền thống', N'Áo dài cưới màu trắng, họa tiết truyền thống', N'Available', 2000000, 2, CAST(N'2024-06-17T12:16:19.287' AS DateTime))
+INSERT [dbo].[Product] ([ProductID], [ProductTitle], [ProductName], [ProductDescription], [ProductStatus], [ProductPrice], [CategoryID], [CreatedAt]) VALUES (1, N'Đầm dạ hội', N'Đầm dạ hội phong cách sang trọng', N'Chiếc đầm dạ hội, thiết kế hiện đại', N'Available', 1500000, 1, CAST(N'2024-06-17T12:16:19.287' AS DateTime))
+INSERT [dbo].[Product] ([ProductID], [ProductTitle], [ProductName], [ProductDescription], [ProductStatus], [ProductPrice], [CategoryID], [CreatedAt]) VALUES (2, N'Áo dài cưới', N'Áo dài cưới với họa tiết truyền thống', N'Áo dài cưới, họa tiết truyền thống', N'Available', 2000000, 2, CAST(N'2024-06-17T12:16:19.287' AS DateTime))
 INSERT [dbo].[Product] ([ProductID], [ProductTitle], [ProductName], [ProductDescription], [ProductStatus], [ProductPrice], [CategoryID], [CreatedAt]) VALUES (3, N'Váy cưới ren', N'Váy cưới với họa tiết ren tinh tế', N'Chiếc váy cưới với họa tiết ren, màu trắng', N'Available', 2500000, 3, CAST(N'2024-06-17T12:16:19.287' AS DateTime))
 INSERT [dbo].[Product] ([ProductID], [ProductTitle], [ProductName], [ProductDescription], [ProductStatus], [ProductPrice], [CategoryID], [CreatedAt]) VALUES (4, N'Áo khoác da', N'Áo khoác da thật, phong cách cá tính', N'Chiếc áo khoác da thật, màu đen', N'Available', 3000000, 4, CAST(N'2024-06-17T12:16:19.287' AS DateTime))
 INSERT [dbo].[Product] ([ProductID], [ProductTitle], [ProductName], [ProductDescription], [ProductStatus], [ProductPrice], [CategoryID], [CreatedAt]) VALUES (5, N'Giày thể thao', N'Giày thể thao, phong cách năng động', N'Đôi giày thể thao màu trắng, phong cách năng động', N'Available', 1000000, 5, CAST(N'2024-06-17T12:16:19.287' AS DateTime))
@@ -667,11 +667,11 @@ SET IDENTITY_INSERT [dbo].[Product] OFF
 GO
 SET IDENTITY_INSERT [dbo].[ProductColor] ON 
 
-INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (1, 1, 1, N'image1_color1.jpg')
-INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (2, 2, 2, N'image2_color2.jpg')
-INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (3, 3, 3, N'image3_color3.jpg')
-INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (4, 4, 4, N'image4_color4.jpg')
-INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (5, 5, 5, N'image5_color5.jpg')
+INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (1, 1, 1, N'https://damvaydep.net/image/dam-da-hoi-dai-xe-ta-tay-canh-doi-cuc-xinh-mau-den-vang-70103j.jpg')
+INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (2, 2, 2, N'https://mimosawedding.net/wp-content/uploads/2022/08/ao-dai-cuoi-trang-1.jpg')
+INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (3, 3, 3, N'https://tuarts.net/wp-content/uploads/2015/04/anh-cuoi-dep-tai-phim-truong.jpg')
+INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (4, 4, 4, N'https://th.bing.com/th/id/R.28268343114e0f5104c1284d954ece34?rik=gUi35o8vBdU%2fAg&riu=http%3a%2f%2fdanier.com%2fcdn%2fshop%2fproducts%2fDX_1086--final.jpg%3fv%3d1580769963&ehk=qPje%2beIdPkrjX2s8UGISsuV5mHz634%2bSevODRtZZ0Gc%3d&risl=&pid=ImgRaw&r=0')
+INSERT [dbo].[ProductColor] ([ProductColorID], [ProductID], [ColorID], [ProductColorImage]) VALUES (5, 5, 5, N'https://streetstyleshop.vn/wp-content/uploads/2020/08/gi%C3%A0y-th%E1%BB%83-thao-nam-m%E1%BB%9Bi-nh%E1%BA%A5t-2-1.jpg')
 SET IDENTITY_INSERT [dbo].[ProductColor] OFF
 GO
 SET IDENTITY_INSERT [dbo].[ProductDetail] ON 
